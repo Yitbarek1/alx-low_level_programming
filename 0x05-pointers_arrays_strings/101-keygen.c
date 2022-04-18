@@ -1,27 +1,28 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * _atoi - check the code.
  * @s: pointer char type
  * Return: Always 0.
  */
-int _atoi(char *s)
+int main(void)
 {
-int negative = 1, i = 0;
-unsigned int numero = 0;
+char seed[53] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char password[22];
+int i, n, passw, complem;
 
-for (i = 0; s[i] != '\0'; i++)
+srand(time(0));
+
+for (i = 0; passw < 2772; i++)
 {
-if (s[i] == '-')
-negative *= -1;
-
-else if (s[i] >= 0 + '0' && s[i] < 10 + '0')
-numero = numero * 10 + (s[i] - '0');
-
-else if (s[i - 1] >= 0 + '0' && s[i - 1] < 10 + '0')
-break;
+n = rand() % 10;
+password[i] = seed[n];
+passw += password[i];
 }
-
-return (numero *negative);
+complem = 2772 - passw;
+password[i] = complem;
+printf("%s\n",  password);
+return (0);
 }
