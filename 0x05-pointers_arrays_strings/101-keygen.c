@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <time.h>
 /**
  * _atoi - check the code.
  * @s: pointer char type
