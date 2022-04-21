@@ -1,11 +1,11 @@
-#include "main.h"
+nclude "holberton.h"
 #include <stdio.h>
 
 /**
- * _revse array a function that reverses the content of an array of integers
- * @a: content
- * @n: elements of content
- * return: always 0 (succsus)
+ * reverse_array - check the code.
+ * @a: is a pointer type char
+ * @n: is a pointer type char
+ * Return: Always 0.
  *
  */
 void reverse_array(int *a, int n)
