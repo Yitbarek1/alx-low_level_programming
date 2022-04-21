@@ -6,6 +6,7 @@
  * @a: content
  * @n: elements of content
  * return: always 0 (succsus)
+ *
  */
 void reverse_array(int *a, int n)
 {
