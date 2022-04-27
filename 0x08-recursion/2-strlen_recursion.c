@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * factorial - gets factorial of n
- * @n: integer
+ * _print_rev_recursion - Prints a string in reverse
+ * @s: string
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int factorial(int n)
+void _print_rev_recursion(char *s)
 {
-if (n < 0)
-return (-1);
-if (n == 0)
-return (1);
-return (n * factorial(n - 1));
+if (*s != '\0')
+{
+_print_rev_recursion(s + 1);
+_putchar(*s);
+}
 }
