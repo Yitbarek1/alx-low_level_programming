@@ -21,7 +21,7 @@ for (i = 0; s1[i]; i++)
 ;
 }
 if (s2 == NULL)
-J = 0;
+j = 0;
 else
 {
 for (j = 0; s2[j]; j++)
